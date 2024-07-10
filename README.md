@@ -2,10 +2,10 @@
 
 Steps to run the code:
 
-1.  Create a new Python environment using `python -m venv .venv`.
+1.  Change directory (CD) into the cloned repository folder and create a new Python environment using `python -m venv .venv` (`python3 -m venv .venv` if on MAC).
 2.  Activate the new environment.
 3.  Install dependencies with `pip install -r requirements.txt`.
-4.  Execute the “challenge.py” file inside the "src" folder.
+4.  Execute the “challenge.py” file inside the "src" folder using `python ./src/challenge.py` (`python3 ./src/challenge.py` if on MAC).
 
 ### Data Engineering in Production questions
 
