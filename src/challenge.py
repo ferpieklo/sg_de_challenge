@@ -231,6 +231,6 @@ duckdb.sql(top_products_query)
 top_products_df = duckdb.sql("SELECT * FROM top_products").to_df()
 #Show the results
 log.info("Top products dataframe:")
-# log.info(top_products_df.to_string())
+
 with pd.option_context('display.min_rows', 10, 'display.max_columns', 11):
      log.info(top_products_df)
