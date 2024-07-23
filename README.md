@@ -1,4 +1,4 @@
-## sg_de_challenge
+## Data Engineering Challenge for eCommerce Company
 
 Steps to run the code:
 
@@ -7,7 +7,31 @@ Steps to run the code:
 3.  Install dependencies with `pip install -r requirements.txt`.
 4.  Execute the “challenge.py” file inside the "src" folder using `python ./src/challenge.py` (`python3 ./src/challenge.py` if on MAC).
 
+### Data Extraction and Transformation
+
+One challenge we face at SG is accurately reporting international orders when
+sales are made in different currencies. To address this, we retrieve reference exchange rate
+data that assists in calculating and reporting international sales across various currencies.
+The European Central Bank provides an API to collect this data, but a simpler alternative is
+the Frankfurter API. Its documentation can be found [here](https://www.frankfurter.app).
+
+Using Python, write a script to pull exchange rate data useful for reporting. For this exercise,
+we need data for February 12-13, 2024. Retrieve data for all daily currencies against the
+Euro.
+
+Using fake e-commerce data from the API documented [here](https://fakestoreapi.com), pull data for all products in the
+'Women’s Clothing' category. Assuming the data for these products is in USD, create a new
+pandas DataFrame that includes all of the products, the price in USD, the price in EUR, and
+the date of the exchange rate that was used.
+
+Furthermore, considering that the DataFrame represents a table in BigQuery which receives
+new products daily, write a query to create a new table with only the 5 best-rated products
+each day.
+
 ### Data Engineering in Production questions
+
+For the provided questions below, please offer a concise explanation in one paragraph.
+Diagrams can be included if they are helpful, but they are not required.
 
 > Using typical sales data as an example, how would you ensure that a data pipeline is kept  
 > up to date with accurate data? What tools or processes might you use so that sales data is  
